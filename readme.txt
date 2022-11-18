@@ -5,5 +5,3 @@ gcc parser.
 
 run file with desired input
 ./a.out "filename.txt"
-
-there u go ta da
