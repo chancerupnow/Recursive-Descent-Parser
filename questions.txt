@@ -1,0 +1,40 @@
+Inside program():
+    for each CAL instruction in code
+        set the M value of the instruction to the address of the procedure
+
+    ** this for loop I'm totally lost on **
+    ## loop through code
+        ## if code is CAL
+            ## set instruction m val to table address using code m val as index
+
+    since we now know main's address, we can fix that initial jump
+
+    ** how am i fixing jump here and how am I getting main's address? **
+    ## set first code m val to first table val address
+
+    emit HLT
+
+    ** what am I passing as m value? **
+    ## emit(SYS, 0, HLT);
+
+Inside block():
+    once we emit INC, we'll be emitting code so this is where the procedure starts,
+    multiply the address by 3 bc PAS format
+
+    ** am I multiplying inc_m_value * 3 here? **
+    ## multiply procedures address idfk just do what ta says
+
+Inside procedures():
+    emit RTN
+
+    ** what am I passing as m value? **
+    ## emit(OPR, 0, RTN);
+
+Inside statement():
+    emit RED
+
+    ** what am I passing as m value? **
+    ## emit(SYS, 0, RED);
+
+error6_3.txt
+error10.txt
